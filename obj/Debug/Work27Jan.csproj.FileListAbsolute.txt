@@ -1,0 +1,7 @@
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\bin\Debug\Work27Jan.exe.config
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\bin\Debug\Work27Jan.exe
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\bin\Debug\Work27Jan.pdb
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\obj\Debug\Work27Jan.csprojAssemblyReference.cache
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\obj\Debug\Work27Jan.csproj.CoreCompileInputs.cache
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\obj\Debug\Work27Jan.exe
+D:\.NetBatch2021\ConsoleApp\Work27Jan\Work27Jan\obj\Debug\Work27Jan.pdb
