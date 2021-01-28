@@ -10,19 +10,20 @@ using System.IO;
 namespace Work27Jan
 {
 	[Serializable]
-	class PersonAge
+	class PersonAge : IDeserializationCallback
 	{
-		public int Age { get; set; }
+		[NonSerialized]
+		int Age = 0;
 
 		public string Name { get; set; }
 
-		public void ShowAgeDetails()
+		public void OnDeserialization(object sender)
 		{
 			Console.WriteLine($"**********{Name} Details**************");
 			var today = DateTime.Today;
 
-			DateTime bday = new DateTime(1998, 12, 11);// YY/MM/DD
-			Console.WriteLine("My Birth Date : " +bday.ToString());
+			DateTime bday = new DateTime(1998, 12, 11); // YY/MM/DD
+			Console.WriteLine("My Birth Date : " + bday.ToString());
 
 			// Calculate the age
 			int age = today.Year - bday.Year;
@@ -30,6 +31,7 @@ namespace Work27Jan
 			Console.WriteLine($"Total age in years : {age} yrs");
 			Console.WriteLine("************************************");
 		}
+
 	}
 
 	class BinaryAssignment
@@ -45,7 +47,6 @@ namespace Work27Jan
 
 			fs.Seek(0, SeekOrigin.Begin);
 			PersonAge res = (PersonAge)bfs.Deserialize(fs);
-			res.ShowAgeDetails();
 		}
 	}
 }
